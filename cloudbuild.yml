@@ -1,0 +1,5 @@
+steps:
+  - name: gcr.io/cloud-builders/gsutil
+    args: ['-m', 'rsync', '-r', '-c', '-d', 'public', 'gs://$_BUCKET_NAME_1']
+  - name: gcr.io/cloud-builders/gsutil
+    args: ['-m', 'rsync', '-r', '-c', '-d', 'public', 'gs://$_BUCKET_NAME_2']

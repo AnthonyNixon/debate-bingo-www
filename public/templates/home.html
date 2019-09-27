@@ -1,0 +1,15 @@
+<div ng-controller="welcomeCtrl" class="welcomeDiv">
+    <h1>Welcome!</h1>
+    <h2>Create a new board, or enter an existing board code.</h2>
+    <script type="text/javascript" src="index.js"></script>
+
+    <div flex="50" layout="row">
+        <md-button class="md-raised md-primary" ng-click="goToBoard()">{{buttonText}}</md-button>
+        <md-input-container>
+            <label>Board Code</label>
+            <input ng-model="boardCode" type="text">
+        </md-input-container>
+
+    </div>
+
+</div>

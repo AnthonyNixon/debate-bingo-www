@@ -1,0 +1,21 @@
+<div ng-controller="bingoCtrl">
+<div class="tableDiv" ng-hide="bingo">
+    <table class="tableElement">
+        <tr class="tableHeader">
+            <th>B</th>
+            <th>I</th>
+            <th>N</th>
+            <th>G</th>
+            <th>O</th>
+        </tr>
+        <tr ng-repeat="row in grid" class="tableRow">
+            <td ng-repeat="cell in row" ng-class="{checked: cell.checked}" ng-click="clickCell(cell.coordinates.x, cell.coordinates.y)">{{cell.content}}</td>
+        </tr>
+    </table>
+</div>
+<div class="gifDiv" ng-show="bingo">
+    <div class="gifElement">
+        <img src="bingo.gif" class="bingoGif"/>
+    </div>
+</div>
+</div>

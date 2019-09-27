@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="debateBingo">
+<!--<script>if (location.protocol !== "https:") location.protocol = "https:";</script>-->
+<head>
+    <link rel="icon"
+          type="image/ico"
+          href="favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127113745-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-127113745-1');
+    </script>
+
+    
+    <title>{{division}} Debate Bingo!</title>
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+</head>
+<base href="/">
+<!--<body ng-controller="homeCtrl">-->
+<!--  <div class="tableDiv" ng-hide="bingo">-->
+<!--    <table class="tableElement">-->
+<!--    <tr class="tableHeader">-->
+<!--      <th>B</th>-->
+<!--      <th>I</th>-->
+<!--      <th>N</th>-->
+<!--      <th>G</th>-->
+<!--      <th>O</th>-->
+<!--    </tr>-->
+<!--    <tr ng-repeat="row in grid" class="tableRow">-->
+<!--      <td ng-repeat="cell in row" ng-class="{checked: cell.checked}" ng-click="cell.checked = !cell.checked">{{cell.content}}</td>-->
+<!--    </tr>-->
+<!--  </table>-->
+<!--  </div>-->
+<!--  <div class="gifDiv" ng-show="bingo">-->
+<!--    <div class="gifElement">-->
+<!--      <img src="bingo.gif" class="bingoGif"/>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <script type="text/javascript" src="index.js"></script>-->
+<!--</body>-->
+<body ng-controller="homeCtrl">
+<div class="wrapper">
+    <md-toolbar layout="row" class="header">
+        <span><h1>{{division}} Debate Bingo</h1></span>
+    </md-toolbar>
+    <div ng-view class="contentDiv"></div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
