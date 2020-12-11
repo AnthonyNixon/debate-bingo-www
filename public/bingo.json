@@ -13,7 +13,7 @@
       "content": "\"What's a roadmap?\""
     },
     {
-      "content": "Flowing on notebook paper"
+      "content": "Countdown before a speech"
     },
     {
       "content": "Spending 15 seconds trying to pronounce a word they don't know"
@@ -58,7 +58,7 @@
       "content": "Reads tag without source"
     },
     {
-      "content": "Visibly isn't flowing"
+      "content": "No one turns on face cam"
     },
     {
       "content": "Re-reads cards from last speech"
@@ -80,6 +80,18 @@
     },
     {
       "content": "Prep time used for the 1NR"
-    }
+    },
+    {
+      "content": "Technical Difficulties"
+    },
+    {
+      "content": "A debater joins the room after the round is supposed to start"
+    },
+    {
+      "content": "Answers an argument that the other team properly kicked"
+    },
+    {
+      "content": "Is muted when they should be unmuted or the other way around"
+    },
   ]
 }
